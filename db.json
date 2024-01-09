@@ -10,5 +10,80 @@
                 "email": "john_doe@example.com"
             }
         }
-    }
+    },
+    "mitra": [
+        {
+            "id": "MTR1001",
+            "nama_mitra": "PT MITRA 001",
+            "id_user": 1
+        },
+        {
+            "id": "MTR1002",
+            "nama_mitra": "PT MITRA 002",
+            "id_user": 1
+        },
+        {
+            "id": "MTR1003",
+            "nama_mitra": "PT MITRA 003",
+            "id_user": 2
+        },
+        {
+            "id": "MTR1004",
+            "nama_mitra": "PT MITRA 004",
+            "id_user": 2
+        },
+        {
+            "id": "MTR1005",
+            "nama_mitra": "PT MITRA 005",
+            "id_user": 2
+        }
+    ],
+    "layanan": [
+        {
+            "id": "LYN0001",
+            "id_mitra": "MTR1001",
+            "tipe": "air",
+            "kode": "ABC-00412321",
+            "tanggal": "2023-11-20",
+            "status": "aktif"
+        },
+        {
+            "id": "LYN0002",
+            "id_mitra": "MTR1002",
+            "tipe": "air",
+            "kode": "ABC-12312132",
+            "tanggal": "2023-11-20",
+            "status": "noaktif"
+        }
+    ],
+    "tagihan": [
+        {
+            "id": "INV-0001",
+            "id_layanan": "LYN001",
+            "total_bayar": 5000000,
+            "tgl_invoice": "2023-11-01",
+            "status": "unpaid"
+        },
+        {
+            "id": "INV-0002",
+            "id_layanan": "LYN001",
+            "total_bayar": 5000000,
+            "tgl_invoice": "2023-10-01",
+            "status": "paid"
+        },
+        {
+            "id": "INV-0003",
+            "id_layanan": "LYN001",
+            "total_bayar": 5000000,
+            "tgl_invoice": "2023-09-01",
+            "status": "paid"
+        },
+        {
+            "id": "INV-0004",
+            "id_layanan": "LYN0002",
+            "total_bayar": 5000000,
+            "tgl_invoice": "2023-11-01",
+            "status": "unpaid"
+        }
+    ]
 }
